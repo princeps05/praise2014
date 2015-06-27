@@ -1,0 +1,53 @@
+<!doctype html>
+<html manifest="appcache.manifest">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="두레찬양">
+	<link rel="apple-touch-icon" href="dure.jpg">
+	<link rel="apple-touch-startup-image" href="dure.jpg">
+	
+	<link defer async rel="icon" href="favicon.ico?v=20140908" type="image/x-icon"/>
+
+	<link defer async rel="stylesheet" href="css/jquery.mmenu.all.css"/>	
+	<link defer async rel="stylesheet" href="css/index.css"/>	
+
+<title>두레찬양</title>
+</head>
+	
+	<body>
+				
+		<div id="page">
+			<div class="header">
+				<a id="menuBtn"></a>
+				<span id="title"></span>
+			</div>
+			<div class="content" id="content">
+				<img id="normalImg" src="http://vespasiani.cdn3.cafe24.com/dure738.jpg" class="on" />
+				<img id="zoomInImg" class="off" />
+			</div>
+			<div id="btn_area" class="on">
+				<a id="prev_btn"></a>
+				<a id="next_btn"></a>
+			</div>
+		</div>
+		
+		<nav id="menu">
+			<ul></ul>
+		</nav>
+		
+	<script src="js/lib/jquery-2.1.1.min.js"></script>
+	<script defer src="js/lib/jquery.hammer-min.js"></script>
+	<script defer src="js/lib/jquery.mmenu.min.all.js"></script>
+	<script defer src="js/lib/fastclick.min.js"></script>
+	<script defer src="js/lib/handlebars-v1.3.0.min.js"></script>
+	<script defer src="js/praiseList.js"></script>
+	<script defer id="template" type="text/x-handlebars-template">
+    	<li class="mm-noresultsmsg">검색한 찬양이 없습니다.</li>{{#praise}}<li data-no="{{no}}" data-title="{{title}}" class="mm-hidden">{{no}}장 {{title}}</li>{{/praise}}	
+	</script>	
+	<script src="js/index.js"></script>	
+	
+	</body>
+</html>

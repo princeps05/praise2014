@@ -1,0 +1,23 @@
+CACHE MANIFEST
+
+# 2015-05-06
+
+CACHE:
+
+js/lib/fastclick.min.js
+js/lib/jquery.hammer-min.js
+js/lib/handlebars-v1.3.0.min.js
+js/lib/jquery-2.1.1.min.js
+js/lib/jquery.mmenu.min.all.js
+
+js/praiseList.js
+js/index.js
+
+css/index.css
+css/jquery.mmenu.all.css
+
+dure.jpg
+
+NETWORK: 
+*
+FALLBACK
